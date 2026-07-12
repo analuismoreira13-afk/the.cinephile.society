@@ -828,6 +828,30 @@ transform:translateY(8px);
 }
 
 
+.entrance h2{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    margin:10px 0;
+    line-height:.75;
+}
+
+
+.normal-title{
+    font-family:'Cormorant Garamond', serif;
+    font-size:80px;
+    font-weight:600;
+    letter-spacing:2px;
+    color:#F6BE00;
+}
+
+
+.script-title{
+    font-family:'Monsieur La Doulaise', cursive;
+    font-size:95px;
+    color:#F6BE00;
+    margin-top:-35px;
+    margin-right:-20px;
 }
 
 .entrance p{
@@ -876,26 +900,12 @@ transform:translateY(8px);
 }
 
 
-.entrance-line1{
-
+.linha1{
     font-family:'Cormorant Garamond', serif;
-    font-size:80px;
-    font-weight:600;
-    letter-spacing:4px;
-    color:#F6BE00;
-
 }
 
-
-.entrance-line2{
-
+.linha2{
     font-family:'Monsieur La Doulaise', cursive;
-    font-size:95px;
-    color:#F6BE00;
-
     align-self:flex-end;
-
-    margin-top:-35px;
-    margin-right:-20px;
-
+    margin-top:-6px;
 }
