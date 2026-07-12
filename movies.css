@@ -810,13 +810,14 @@ transform:translateY(8px);
 
 .entrance{
     height:100vh;
+    padding-top:55px;
+    box-sizing:border-box;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
 }
-
 
 .entrance h1{
     font-family:'Cormorant Garamond', serif;
