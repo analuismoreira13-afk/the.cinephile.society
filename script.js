@@ -61,6 +61,8 @@ window.onclick=function(e){
 
 // ---------- SEARCH BAR ----------
 
+// ---------- SEARCH BAR ----------
+
 const searchInput = document.getElementById("searchInput");
 
 
@@ -71,25 +73,55 @@ if(searchInput){
         let searchValue = this.value.toLowerCase();
 
 
+        // MOVIES
+        const movies = document.querySelectorAll(".movie-card");
+
+        movies.forEach(movie => {
+
+            let title = movie.querySelector("h3").textContent.toLowerCase();
+
+            if(title.includes(searchValue)){
+                movie.style.display = "";
+            } 
+            else{
+                movie.style.display = "none";
+            }
+
+        });
+
+
+
+        // DIRECTORS
         const directors = document.querySelectorAll(".director-card");
 
-console.log(document.querySelectorAll(".director-card"));
         directors.forEach(director => {
-
 
             let name = director.querySelector("h3").textContent.toLowerCase();
 
-
             if(name.includes(searchValue)){
-
                 director.style.display = "";
-
-            } else {
-
+            }
+            else{
                 director.style.display = "none";
-
             }
 
+        });
+
+
+
+        // ACTORS
+        const actors = document.querySelectorAll(".actor-card");
+
+        actors.forEach(actor => {
+
+            let name = actor.querySelector("h3").textContent.toLowerCase();
+
+            if(name.includes(searchValue)){
+                actor.style.display = "";
+            }
+            else{
+                actor.style.display = "none";
+            }
 
         });
 
@@ -97,7 +129,6 @@ console.log(document.querySelectorAll(".director-card"));
     });
 
 }
-
 
 // ---------- DIRECTORS MODAL ----------
 
@@ -186,7 +217,7 @@ if(directorModal){
 
 }
 
-const actors = document.querySelectorAll(".actor-card");
+const actorCards = document.querySelectorAll(".actor-card");
 
 
 const actorModal = document.getElementById("actor-modal");
@@ -200,7 +231,7 @@ const actorInfo = document.getElementById("actor-modal-info");
 const actorSummary = document.getElementById("actor-modal-summary");
 
 
-actors.forEach(actor => {
+actorCards.forEach(actor => {
 
 
 actor.addEventListener("click", function(e){
