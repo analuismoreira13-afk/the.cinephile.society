@@ -894,7 +894,10 @@ transform:translateY(8px);
 
 }
 
-
+.seo-title{
+    position:absolute;
+    left:-9999px;
+}
 
 
 
