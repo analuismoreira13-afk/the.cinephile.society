@@ -838,20 +838,23 @@ transform:translateY(8px);
 
 
 .normal-title{
-    font-family:'Cormorant Garamond', serif;
-    font-size:80px;
+    ont-family:'Cormorant Garamond', serif;
+    font-size:25px;
     font-weight:600;
     letter-spacing:2px;
+    text-transform:uppercase;
     color:#F6BE00;
+
 }
 
 
 .script-title{
     font-family:'Monsieur La Doulaise', cursive;
-    font-size:150px;
+    font-size:52px;
     color:#F6BE00;
-    margin-top:5px;
-    margin-right:-35px;
+    align-self:flex-end;
+    margin-top:-6px;
+    font-weight:500;
 }
 
 .entrance p{
@@ -890,4 +893,9 @@ transform:translateY(8px);
     color:#000;
 
 }
+
+
+
+
+
 
