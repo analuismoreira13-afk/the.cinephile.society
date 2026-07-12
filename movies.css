@@ -804,3 +804,70 @@ transform:translateY(8px);
     color:white;
 
 }
+
+
+/* ---------- FRONT PAGE ---------- */
+
+.entrance{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+
+.entrance h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:32px;
+    font-weight:400;
+    color:#ddd;
+    letter-spacing:3px;
+}
+
+
+.entrance h2{
+    font-family:'Monsieur La Doulaise', cursive;
+    font-size:80px;
+    color:#F6BE00;
+    margin:10px 0;
+}
+
+
+.entrance p{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:18px;
+    color:#bdbdbd;
+}
+
+
+.enter-button{
+
+    margin-top:35px;
+
+    padding:12px 35px;
+
+    border:1px solid #F6BE00;
+
+    color:#F6BE00;
+
+    text-decoration:none;
+
+    font-family:'Courier Prime', monospace;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+
+.enter-button:hover{
+
+    background:#F6BE00;
+
+    color:#000;
+
+}
